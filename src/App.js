@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import HookFetch from "./hooks/useFetchHook";
-import ContactInfos from "./pages/test";
+import DisplayData from "./pages/home";
 
 function App() {
 
@@ -70,10 +70,10 @@ function App() {
             MAIS par convention on l'appelle 'render' !
             Le rôle de 'render', dans ce contexte, est de retourner 
             les données depuis FetchHook pour pouvoir les transmettre à 
-            ContactInfos dont le rôle est uniquement l'affichage ! */}
+            DisplayData dont le rôle est uniquement l'affichage ! */}
             <HookFetch 
                 url={url + userId} 
-                render={(data) => <ContactInfos data={data} />}
+                render={(data) => <DisplayData data={data} />}
                 />
         </div >
     );

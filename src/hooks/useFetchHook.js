@@ -49,7 +49,7 @@ const HookFetch = ({ url, render }) => {
         fetchData();
     }, [url]);
 
-    // return <ContactInfo data={data} />
+    // return <DisplayData data={data} />
     return render(data);
 };
 

@@ -1,4 +1,4 @@
-const ContactInfos = ({ data }) => {
+const DisplayData = ({ data }) => {
 	return (
 		<>
 			<p>Je m'appelle {data.name}</p>
@@ -7,4 +7,4 @@ const ContactInfos = ({ data }) => {
 	);
 };
 
-export default ContactInfos;
+export default DisplayData;
